@@ -9,6 +9,7 @@
       "className": "Sequential",
       "config": {
         "name": "sequential_3",
+        "trainable": true,
         "layers": [
           {
             "className": "InputLayer",
