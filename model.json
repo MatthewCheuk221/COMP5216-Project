@@ -1,26 +1,17 @@
 {
   "format": "layers-model",
-  "generatedBy": "keras v3.10.0",
+  "generatedBy": "keras v2.10.0",
   "convertedBy": "TensorFlow.js Converter v4.22.0",
   "modelTopology": {
-    "keras_version": "3.10.0",
+    "keras_version": "2.10.0",
     "backend": "tensorflow",
     "model_config": {
-      "class_name": "Sequential",
+      "className": "Sequential",
       "config": {
         "name": "sequential_3",
-        "trainable": true,
-        "dtype": {
-          "module": "keras",
-          "class_name": "DTypePolicy",
-          "config": {
-            "name": "float32"
-          },
-          "registered_name": null
-        },
         "layers": [
           {
-            "class_name": "InputLayer",
+            "className": "InputLayer",
             "config": {
               "batch_input_shape": [
                 null,
@@ -35,18 +26,11 @@
             }
           },
           {
-            "class_name": "Conv2D",
+            "className": "Conv2D",
             "config": {
               "name": "conv2d",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "filters": 32,
               "kernel_size": [
                 3,
@@ -66,18 +50,14 @@
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
-                "module": "keras.initializers",
-                "class_name": "GlorotUniform",
+                "className": "GlorotUniform",
                 "config": {
                   "seed": null
-                },
-                "registered_name": null
+                }
               },
               "bias_initializer": {
-                "module": "keras.initializers",
-                "class_name": "Zeros",
-                "config": {},
-                "registered_name": null
+                "className": "Zeros",
+                "config": {}
               },
               "kernel_regularizer": null,
               "bias_regularizer": null,
@@ -87,18 +67,11 @@
             }
           },
           {
-            "class_name": "MaxPooling2D",
+            "className": "MaxPooling2D",
             "config": {
               "name": "max_pooling2d",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "pool_size": [
                 2,
                 2
@@ -112,18 +85,11 @@
             }
           },
           {
-            "class_name": "Conv2D",
+            "className": "Conv2D",
             "config": {
               "name": "conv2d_1",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "filters": 64,
               "kernel_size": [
                 3,
@@ -143,17 +109,14 @@
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
-                "module": "keras.initializers",
+                "className": "GlorotUniform",
                 "config": {
                   "seed": null
-                },
-                "registered_name": null
+                }
               },
               "bias_initializer": {
-                "module": "keras.initializers",
-                "class_name": "Zeros",
-                "config": {},
-                "registered_name": null
+                "className": "Zeros",
+                "config": {}
               },
               "kernel_regularizer": null,
               "bias_regularizer": null,
@@ -163,18 +126,11 @@
             }
           },
           {
-            "class_name": "MaxPooling2D",
+            "className": "MaxPooling2D",
             "config": {
               "name": "max_pooling2d_1",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "pool_size": [
                 2,
                 2
@@ -188,18 +144,11 @@
             }
           },
           {
-            "class_name": "Conv2D",
+            "className": "Conv2D",
             "config": {
               "name": "conv2d_2",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "filters": 128,
               "kernel_size": [
                 3,
@@ -219,18 +168,14 @@
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
-                "module": "keras.initializers",
-                "class_name": "GlorotUniform",
+                "className": "GlorotUniform",
                 "config": {
                   "seed": null
-                },
-                "registered_name": null
+                }
               },
               "bias_initializer": {
-                "module": "keras.initializers",
-                "class_name": "Zeros",
-                "config": {},
-                "registered_name": null
+                "className": "Zeros",
+                "config": {}
               },
               "kernel_regularizer": null,
               "bias_regularizer": null,
@@ -240,50 +185,32 @@
             }
           },
           {
-            "class_name": "Flatten",
+            "className": "Flatten",
             "config": {
               "name": "flatten",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "data_format": "channels_last"
             }
           },
           {
-            "class_name": "Dense",
+            "className": "Dense",
             "config": {
               "name": "dense",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "units": 128,
               "activation": "relu",
               "use_bias": true,
               "kernel_initializer": {
-                "module": "keras.initializers",
-                "class_name": "GlorotUniform",
+                "className": "GlorotUniform",
                 "config": {
                   "seed": null
-                },
-                "registered_name": null
+                }
               },
               "bias_initializer": {
-                "module": "keras.initializers",
-                "class_name": "Zeros",
-                "config": {},
-                "registered_name": null
+                "className": "Zeros",
+                "config": {}
               },
               "kernel_regularizer": null,
               "bias_regularizer": null,
@@ -292,52 +219,34 @@
             }
           },
           {
-            "class_name": "Dropout",
+            "className": "Dropout",
             "config": {
               "name": "dropout",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "rate": 0.2,
               "seed": null,
               "noise_shape": null
             }
           },
           {
-            "class_name": "Dense",
+            "className": "Dense",
             "config": {
               "name": "dense_1",
               "trainable": true,
-              "dtype": {
-                "module": "keras",
-                "class_name": "DTypePolicy",
-                "config": {
-                  "name": "float32"
-                },
-                "registered_name": null
-              },
+              "dtype": "float32",
               "units": 10,
               "activation": "softmax",
               "use_bias": true,
               "kernel_initializer": {
-                "module": "keras.initializers",
-                "class_name": "GlorotUniform",
+                "className": "GlorotUniform",
                 "config": {
                   "seed": null
-                },
-                "registered_name": null
+                }
               },
               "bias_initializer": {
-                "module": "keras.initializers",
-                "class_name": "Zeros",
-                "config": {},
-                "registered_name": null
+                "className": "Zeros",
+                "config": {}
               },
               "kernel_regularizer": null,
               "bias_regularizer": null,
@@ -345,18 +254,12 @@
               "bias_constraint": null
             }
           }
-        ],
-        "build_input_shape": [
-          null,
-          28,
-          28,
-          1
         ]
       }
     },
     "training_config": {
       "loss": {
-        "class_name": "SparseCategoricalCrossentropy",
+        "className": "SparseCategoricalCrossentropy",
         "config": {
           "name": "sparse_categorical_crossentropy",
           "reduction": "sum_over_batch_size",
@@ -373,20 +276,18 @@
       "steps_per_execution": 1,
       "jit_compile": false,
       "optimizer_config": {
-        "class_name": "Adam",
+        "className": "Adam",
         "config": {
           "name": "adam",
           "learning_rate": {
-            "module": "keras.optimizers.schedules",
-            "class_name": "ExponentialDecay",
+            "className": "ExponentialDecay",
             "config": {
               "initial_learning_rate": 0.001,
               "decay_steps": 10000,
               "decay_rate": 0.9,
               "staircase": true,
               "name": "ExponentialDecay"
-            },
-            "registered_name": null
+            }
           },
           "weight_decay": null,
           "clipnorm": null,
